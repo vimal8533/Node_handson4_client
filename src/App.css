@@ -1,0 +1,22 @@
+.loginParent{
+  display: flex;
+  justify-content: space-around;
+}
+.loginForm,.loginImage{
+  width: 50%;
+  height: 70%;
+}
+.loginImage{
+  background-color: red;
+}
+.loginForm{
+  background-color: bisque;
+  padding: 30px; 
+  text-align: center;
+
+}
+input{
+  width: 30%;
+  height: 30px;
+  margin: 10px;
+}
