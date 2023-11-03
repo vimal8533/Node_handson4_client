@@ -27,7 +27,7 @@ const Login = () => {
     }
 
     return (
-        <div>
+        <div >
             <div className='loginParent'>
                 <form className='loginForm'>
                     <h1>Welcome Back</h1>
@@ -36,9 +36,13 @@ const Login = () => {
                     <input type='email' required id='email' placeholder='Email' name='email' onChange={InputHandler} />
                     <br /><label id='password' >Password</label>
                     <input type='password' id='password' required placeholder='Password' name='password' onChange={InputHandler} />
-                    <br /><button type='button' onClick={registerUser}>Submit</button>
+                    <div className='buttons'>
+                    <button type='button' onClick={registerUser}>Submit</button>
+                    <button type='button'  onClick={() => nav("/register")}>Create Account</button>
+                    </div>
+                    
                 </form>
-                <button type='button' style={{ margin: "10px" }} onClick={() => nav("/register")}>Create Account</button>
+                
                 <div className='loginImage'>
                     <h1>Welcome Image</h1>
                     <h3>{MSG}</h3>
